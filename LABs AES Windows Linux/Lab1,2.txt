@@ -1,0 +1,11 @@
+1. Mod of operation (block ciphers)
+https://en.wikipedia.org/wiki/Block_cipher_mode_of_operation
+- ECB
+- CBC
+- CBC ciphertext stealing (CTS)
+- CFB
+- OFB
+- counter mode (CTR)
+- XTS
+
+2. Code AES, DES with different mods

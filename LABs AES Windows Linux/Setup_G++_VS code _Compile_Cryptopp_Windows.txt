@@ -1,0 +1,43 @@
+1. Install code editor (Visual Studio Code)
+https://code.visualstudio.com/download
+
+2. Install C++ compile library (MinGW-w64)
+Check toolchains and packages support MinGW-w64 here:
+http://mingw-w64.org/doku.php/download
+We shoud setup msys2 for Windows OS (support gcc, g++ version 9.2)
+Note: you shoud disable all old version off gcc and g++
+2.1 Setup msys2
++) Download msys2 at:
+ https://www.msys2.org/
++) Install msys2
++) Update packages
+	pacman -Syu
+	pacman -Su
++)Install gcc, g++ compile
+	pacman -S git mingw-w64-x86_64-gcc base-devel
+	pacman -S mingw-w64-cross-binutils
+2.2  Set windows enviroment for g++, gcc 
+(See "Set window environment variables.docx" for more detail)
++) Open System Properties box
+	Method 1: Search: env -> open: "Edit the system environment variables"
+	Method 2: Open: Control panel-> System -> Advanced system settings -> Advanced)
++) Set path g++, gcc for "environment variables"
+	- Click open "environment variables" and open "path" at box "System variables"  
+	- Select "new", then add two line more belows 
+	C:\msys64\mingw64\bin
+	C:\msys64\usr\bin
+Note: Check for sure that mingw64 was install in the "C:\msys64". If msys64 did not install in default path, you have to change the default path "C:\msys64\mingw64\bin" to the msys64 location path on your PC. 
+
+2.3 Compile cryptopp library
++) Open "cmd" at cryptopp folder;
++) Run (in cmd) set CXX=
+make
+make all
+make test
+
++) Copy library and header files
+mkdir include\cryptopp
+mkdir lib
+copy *.h include\cryptopp
+copy *.a lib
++) Copy two folder "include" and "lib" to your projects

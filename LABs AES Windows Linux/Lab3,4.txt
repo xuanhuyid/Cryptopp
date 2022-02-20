@@ -1,0 +1,25 @@
+
+RSA; ECC
+1. Cipher;
+2. Digital signature
+3. Key Exchage protocol
+RSA:
+\param n modulus
+\param e public exponent
+\param d private exponent
+\param p first prime factor
+\param q second prime factor
+
+0. Vietmese in Cryptopp
+
+1.Key format (PKCS #8 and X.509)
+https://www.cryptopp.com/wiki/Keys_and_Formats
+PKCS #8
+https://en.wikipedia.org/wiki/PKCS_8
+2. Pading
+ -PKCS (Public_key Cryptography padding) (not secure);
+ OAEP (Optimal asymmetric encryption padding);
+
+3. RSA (cipher,signature schemes)
+https://www.cryptopp.com/wiki/RSA_Cryptography
+https://www.cryptopp.com/wiki/RSA_Signature_Schemes

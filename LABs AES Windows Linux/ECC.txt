@@ -1,0 +1,28 @@
+1. Elliptic Curve Cryptography (ECC)
+https://www.cryptopp.com/wiki/Elliptic_Curve_Cryptography
+  - prime fields (p, Z)
+https://www.cryptopp.com/docs/ref/class_e_c_p.html
+https://www.cryptopp.com/docs/ref/class_d_l___group_parameters___e_c.html
+  - Galois fields (2^n)
+https://www.cryptopp.com/docs/ref/class_e_c2_n.html
+
+2. Build ECC
+https://www.cryptopp.com/wiki/Elliptic_Curve_Builder
+ - non-standard (y^2 = x^3 +ax +b);
+
+https://www.cryptopp.com/docs/ref/class_d_l___group_parameters___e_c.html
+https://www.cryptopp.com/docs/ref/class_e_c_p.html
+ 
+- standard curves ( ANSI, Brainpool, IETF, or NIST curve)
+  https://www.secg.org/sec2-v2.pdf
+  oids.h
+3. Curve operations
+   -Addition
+   -Inversion
+   -Scalar multiplication
+
+4.  ECC key agreement protocols
+
+5.  ECC digital signatures
+
+6.  ECC ciphers
